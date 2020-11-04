@@ -2,7 +2,7 @@
 #include <stack>
 #include <cstring> 
 
-
+//task 1 first solution
 bool isValid(const char * str)
 {
     int counter1 = 0, counter2 = 0, counter3 = 0;
@@ -55,6 +55,7 @@ bool isValid(const char * str)
     return false;
     
 }
+//task 1 second solution
 bool isValid2(const char * str)
 {
     std::stack<char> mystack;
@@ -105,5 +106,5 @@ bool isValid2(const char * str)
 }
 int main()
 {
-   std::cout << std::boolalpha << isValid2("()([])[{}]([{}])");
+   std::cout << std::boolalpha << isValid2("()([])[{}]([{}])"); // true
 }
