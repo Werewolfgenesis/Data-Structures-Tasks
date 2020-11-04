@@ -15,7 +15,7 @@ Outtput: false
 
 Task 2
 
-Write a function which accepts an input mathematical expression (string) as parameter and returns the value of the expression.
+Write a program which reads a mathematical expression from a file and then evaluates the expression and writes the result into the same file.
 
 Sort the priorities by ().
 
