@@ -55,7 +55,21 @@ int calculate(char * str)
 }
 int main()
 {
-   char arr[14] = "(7+(2*(3+4)))";
-   std::cout << calculate(arr);
-   return 0;
+    std::ofstream fn;
+    char arr[128];
+    std::string line;
+    fn.open("task2.txt");
+    fn << "(7+(2*(3+4)))/n";
+    fn.close();
+
+    std::ifstream file("task2.txt");
+    while (getline(file, line))
+    {
+        strcpy(arr,line.c_str());
+    }
+    file.close();
+
+    fn.open("task2.txt");
+    fn << "result is " << calculate(arr);
+    return 0;
 }
